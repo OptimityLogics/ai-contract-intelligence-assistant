@@ -84,23 +84,7 @@ If information cannot be found, the assistant should say it is not stated in the
 | Recursive character text splitter | Divides extracted text into overlapping chunks |
 | Simple Memory | Retains a limited window of recent chat context |
 
-## 7. Repository structure
-
-```text
-.
-├── README.md
-├── workflow.json
-├── assets/
-│   └── banner.svg
-└── docs/
-    └── architecture.md
-```
-
-- `workflow.json` — sanitized n8n workflow export.
-- `docs/architecture.md` — architecture, data flow, and implementation checks.
-- `assets/banner.svg` — repository banner.
-
-## 8. Requirements
+## 7. Requirements
 
 - An n8n instance with compatible LangChain/n8n AI nodes available.
 - Your own Google Gemini API credential configured in n8n for chat and embeddings.
@@ -109,7 +93,7 @@ If information cannot be found, the assistant should say it is not stated in the
 
 Node availability, model identifiers, and credential setup can vary by n8n version. Review the imported workflow and select supported models in your environment before running it.
 
-## 9. Setup and run
+## 8. Setup and run
 
 1. **Review the export.** Inspect `workflow.json` before importing it.
 2. **Import into n8n.** Use n8n's workflow import feature.
@@ -122,7 +106,7 @@ Node availability, model identifiers, and credential setup can vary by n8n versi
 
 The workflow export is a demonstration template, not a production deployment. Inspect all nodes and connections after import. The workflow is not activated by default in this repository export.
 
-## 10. Testing checklist
+## 9. Testing checklist
 
 - [ ] Ask about a clause that clearly exists in a contract.
 - [ ] Ask about a term that is absent from a contract.
@@ -133,7 +117,7 @@ The workflow export is a demonstration template, not a production deployment. In
 - [ ] Inspect retrieval-check results for a known clause.
 - [ ] Check duplicate upload behavior and re-ingestion after an n8n restart.
 
-## 11. Security and responsible use
+## 10. Security and responsible use
 
 - Do not upload confidential, personal, privileged, or commercially sensitive contracts unless your organization has approved the processing environment and provider configuration.
 - Configure authentication and access controls before making the chat or upload form available to other users.
@@ -142,7 +126,7 @@ The workflow export is a demonstration template, not a production deployment. In
 - Never commit API keys, credentials, real customer contracts, or confidential sample documents.
 - For production, add authentication, role-based access, document-level permissions, persistent storage, audit logging, monitoring, backups, retention policies, and an evaluation test set.
 
-## 12. Limitations and production improvements
+## 11. Limitations and production improvements
 
 **Known limitations**
 - **In-memory storage:** Data may be lost when the n8n runtime restarts.
