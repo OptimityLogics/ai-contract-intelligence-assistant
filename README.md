@@ -164,7 +164,7 @@ The workflow export is a demonstration template, not a production deployment. In
 
 ## About
 
-Built by [Optimity Logics](https://optimitylogics.com/) to demonstrate a source-grounded approach to AI-assisted contract search and review.
+Built by [Optimity Logics](https://optimitylogics.com/) 
 
 ---
 
